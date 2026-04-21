@@ -1,9 +1,5 @@
 ---
 title: "My Solutions"
-author: "your_pen_name"
-format: 
-  html:
-    embed-resources: true
 ---
 
 ```{r include=FALSE}
@@ -36,14 +32,14 @@ cat(paste0("-   Last modified: ",Sys.Date()))
 
 ## Table of Submissions
 
-Here's my solutions in a table. Note that qmd files must be saved in the form P.x.x.qmd for them to appear in this list.
+Here's my solutions in a table. Note that qmd files must be saved in the form `P.x.qmd` or `E.x.x.x.qmd` for them to appear in this list.
 
 ```{r echo=FALSE}
 DT::datatable(my_files, 
               escape = FALSE, 
               rownames=FALSE,
               options = list(pageLength = 10))
-
+              
 ```
 
 ```{r include=FALSE}
