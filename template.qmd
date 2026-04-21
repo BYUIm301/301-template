@@ -1,0 +1,35 @@
+---
+title: "P.x.x"
+author: "mathmanican"
+format: 
+  html:
+    embed-resources: true
+---
+
+```{r include=FALSE}
+repo_name <- basename(getwd())
+current_filename <- xfun::with_ext(knitr::current_input(), "qmd")
+issues_url <- paste0("https://github.com/BYUIm443/",repo_name,"/issues")
+file_url <- paste0("https://github.com/BYUIm443/",repo_name,"/blob/main/",current_filename)
+pages_base_url <- paste0("https://byuim443.github.io/",repo_name,"/")
+
+##Keep your index.html file current.
+quarto::quarto_render("index.qmd")
+```
+
+```{r results='asis', echo = FALSE}
+cat("-   Links to [GitHub Issues](",issues_url,")")
+cat(" and [qmd file](",file_url,")\n")
+cat("-   Link to [my contributions](",pages_base_url,")\n")
+cat(paste0("-   Last modified: ",Sys.Date()))
+```
+
+## Statement
+
+Type the problem statement here. You do not need to include figures.
+
+## Solution
+
+Type your solution following the [Elements of Style for proofs](https://www.utica.edu/faculty_staff/xixiao/ElementsOfStyle.pdf). Use LaTeX commands to get math to appear, remember to use single dollar signs for inline math, and double dollar signs for centered math, as in $\int_a^b f(x) dx$ or $$\begin{bmatrix}a&b\\c&d\end{bmatrix}.$$
+
+You can include code chunks, as needed, to perform computations. If you have a working installation of python on your machine, you include python computations directly in your work.
