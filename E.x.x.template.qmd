@@ -1,5 +1,5 @@
 ---
-title: "P.x"
+title: "E.x.x.x"
 ---
 
 ```{r results='asis', echo = FALSE}
@@ -8,7 +8,7 @@ source("file_header.R")
 
 ## Statement
 
-Type the problem statement here. 
+Type the problem statement here from the textbook. 
 
 ## Solution
 
