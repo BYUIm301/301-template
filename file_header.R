@@ -1,8 +1,8 @@
 repo_name <- basename(getwd())
 current_filename <- xfun::with_ext(knitr::current_input(), "qmd")
-issues_url <- paste0("https://github.com/BYUIm443/",repo_name,"/issues")
-file_url <- paste0("https://github.com/BYUIm443/",repo_name,"/blob/main/",current_filename)
-pages_base_url <- paste0("https://byuim443.github.io/",repo_name,"/")
+issues_url <- paste0("https://github.com/BYUIm301/",repo_name,"/issues")
+file_url <- paste0("https://github.com/BYUIm301/",repo_name,"/blob/main/",current_filename)
+pages_base_url <- paste0("https://byuim301.github.io/",repo_name,"/")
 
 cat("-   Links to [GitHub Issues](",issues_url,")")
 cat(" and [qmd file](",file_url,")\n")

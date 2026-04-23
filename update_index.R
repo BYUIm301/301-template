@@ -17,7 +17,8 @@ if (Sys.getenv("INDEX_UPDATING") != "true") {
     message("--- Automatically updating index.qmd ---")
 
     # Render the index
-    quarto::quarto_render("index.qmd", quiet = TRUE)
+    system("quarto render index.qmd", wait = TRUE)
+    # quarto::quarto_render("index.qmd", quiet = TRUE)
 
     # Unset the 'lock' variable after completion
     Sys.unsetenv("INDEX_UPDATING")
