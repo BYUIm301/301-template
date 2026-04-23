@@ -1,14 +1,16 @@
 ---
-title: "E.x.x.x"
+title: "P.x"
 ---
 
 ```{r results='asis', echo = FALSE}
 source("file_header.R")
 ```
 
+{{< include _latex.txt >}}
+
 ## Statement
 
-Type the problem statement here from the textbook. 
+Type the problem statement here from the class problem set. 
 
 ## Solution
 
