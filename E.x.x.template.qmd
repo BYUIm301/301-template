@@ -1,0 +1,16 @@
+---
+title: "E.x.x.x"
+---
+
+```{r results='asis', echo = FALSE}
+source("file_header.R")
+```
+
+## Statement
+
+Type the problem statement here from the textbook. 
+
+## Solution
+
+Type your solution following the [Elements of Style for proofs](https://www.utica.edu/faculty_staff/xixiao/ElementsOfStyle.pdf). Use LaTeX commands to get math to appear, remember to use single dollar signs for inline math, and double dollar signs for centered math, as in $\int_a^b f(x) dx$ or $$\begin{bmatrix}a&b\\c&d\end{bmatrix}.$$
+
