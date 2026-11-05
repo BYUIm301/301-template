@@ -1,18 +1,28 @@
 ---
-title: "P.x"
+title: "Your Title"
+author: "Your Name"
+format:
+  html:
+    embed-resources: true
 ---
-
-```{r results='asis', echo = FALSE}
-source("file_header.R")
-```
 
 {{< include _latex.txt >}}
 
 ## Statement
 
-Type the problem statement here from the class problem set. 
+Type the problem statement here.
 
 ## Solution
 
-Type your solution following the [Elements of Style for proofs](https://www.utica.edu/faculty_staff/xixiao/ElementsOfStyle.pdf). Use LaTeX commands to get math to appear, remember to use single dollar signs for inline math, and double dollar signs for centered math, as in $\int_a^b f(x) dx$ or $$\begin{bmatrix}a&b\\c&d\end{bmatrix}.$$
+Type your solution. 
 
+## Handwritten Original
+As approrpirate, include a scan of your handwritten work.
+
+![](document.pdf){width=100% height=600px}
+
+## AI Use Statement
+State how you used AI.
+This might be just the original transcription. 
+It might include helping point out flaws, or even rewriting based on feedback.
+It's your choice how you used AI, just remember to be open and transparent about how you used it. 

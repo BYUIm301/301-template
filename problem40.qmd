@@ -1,0 +1,51 @@
+---
+title: "Problem 40 Solution"
+author: "Author"
+format:
+  html:
+    embed-resources: true
+---
+
+{{< include _latex.txt >}}
+
+## Statement
+
+Let $A, B, C$ be sets.
+
+Prove $A \setminus (B \setminus C) = (A \setminus B) \cup (A \cap C)$.
+
+## Solution
+
+let $x \in A \setminus (B \setminus C)$.
+This means $x \in A$ and $x \notin (B \setminus C)$.
+Because $x \notin B \setminus C$, we know $x \in B$ and $x \notin C$ is false.
+The negation of "$x \in B$ and $x \notin C$" is "$x \notin B$ or $x \in C$".
+We now have $x \in A$, and ($x \notin B$ or $x \in C$).
+Using the distributive law for statements (Problem 13), (Recall $P \wedge (Q \vee R) \iff (P \wedge Q) \vee (P \wedge R)$) we then have $x \in A$ and $x \notin B$, or $x \in A$ and $x \in C$.
+This means $x \in A \setminus B$ or $x \in A \cap C$, which proves $x \in (A \setminus B) \cup (A \cap C)$.
+Repeat for all $x \in A \setminus (B \setminus C)$.
+we have shown $A \setminus (B \setminus C) \subseteq (A \setminus B) \cup (A \cap C)$.
+
+Now let $x \in (A \setminus B) \cup (A \cap C)$.
+This means $x \in A \setminus B$ or $x \in A \cap C$.
+Suppose first that $x \in A \setminus B$.
+then we know $x \in A$ and $x \notin B$.
+Because $x \notin B$, we know $x \in B$ and $x \notin C$ is false, so $x \notin B \setminus C$.
+This shows $x \in A$ and $x \notin B \setminus C$, proving $x \in A \setminus (B \setminus C)$.
+Suppose instead that $x \in A \cap C$.
+Then $x \in A$ and $x \in C$.
+Because $x \in C$, we know $x \in B$ and $x \notin C$ is false.
+Hence we know $x \notin B \setminus C$.
+Because $x \in A$ and $x \notin B \setminus C$, we have $x \in A \setminus (B \setminus C)$.
+Repeat for all $x \in (A \setminus B) \cup (A \cap C)$.
+we have shown $(A \setminus B) \cup (A \cap C) \subseteq A \setminus (B \setminus C)$. $\blacksquare$
+
+## Handwritten Original
+
+As appropriate, include a scan of your handwritten work.
+
+![](problem40.pdf){width=100% height=600px}
+
+## AI Use Statement
+
+This Quarto document was transcribed from the handwritten PDF (`problem40.pdf`) using the Google Gemini AI model. Gemini processed the handwritten text and mathematical expressions, converting them into standard LaTeX and Quarto markup while strictly preserving the author's original sentence structure, capitalization, word choices, and logical layout.

@@ -1,8 +1,0 @@
-project:
-  type: default
-  post-render: update_index.R
-
-author: "your_pen_name"
-format:
-  html:
-    embed-resources: true
